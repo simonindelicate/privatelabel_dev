@@ -29,30 +29,30 @@ nav.scrolled{background:rgba(248,245,240,0.97);border-bottom:1px solid var(--bor
 #hero{position:relative;height:100vh;min-height:100vh;display:flex;align-items:flex-start;flex-direction:column;justify-content:center;overflow:hidden;text-align:center;padding-top:90px}
 .hbg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 30%,rgba(45,80,22,.06) 0%,transparent 70%),radial-gradient(ellipse 40% 60% at 20% 80%,rgba(45,80,22,.04) 0%,transparent 60%),linear-gradient(160deg,#F8F5F0 0%,#F0EDE6 50%,#F8F5F0 100%)}
 .hero-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:1300px;margin:0 auto;padding:60px 60px 40px;width:100%;position:relative;z-index:1}
-.hc{position:relative;z-index:2;max-width:860px;padding:0 24px;opacity:1;animation:fu .8s .2s forwards}
-.ey{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:24px;opacity:1;animation:fu .8s .2s forwards}
-h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,4.5vw,4.2rem);line-height:1.08;font-weight:700;margin-bottom:28px;opacity:1;animation:fu .8s .4s forwards;color:var(--cr)}
+.hc{position:relative;z-index:2;max-width:860px;padding:0 24px;opacity:1;animation:fu .8s .2s both}
+.ey{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:24px;opacity:1;animation:fu .8s .2s both}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,4.5vw,4.2rem);line-height:1.08;font-weight:700;margin-bottom:28px;opacity:1;animation:fu .8s .4s both;color:var(--cr)}
 h1 em{font-style:italic;color:var(--gold)}
-.hs{font-size:clamp(1rem,1.8vw,1.2rem);color:rgba(26,26,26,.6);line-height:1.7;max-width:580px;margin:0 auto 16px;opacity:1;animation:fu .8s .6s forwards}
-.hs-spirits{font-size:.95rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 auto 14px;opacity:1;animation:fu .8s .6s forwards}
-.hs-detail{font-size:.92rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(26,26,26,.45);margin:0 auto 44px;opacity:1;animation:fu .8s .65s forwards}
+.hs{font-size:clamp(1rem,1.8vw,1.2rem);color:rgba(26,26,26,.6);line-height:1.7;max-width:580px;margin:0 auto 16px;opacity:1;animation:fu .8s .6s both}
+.hs-spirits{font-size:.95rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:0 auto 14px;opacity:1;animation:fu .8s .6s both}
+.hs-detail{font-size:.92rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(26,26,26,.45);margin:0 auto 44px;opacity:1;animation:fu .8s .65s both}
 .hs-slash{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;letter-spacing:0;text-transform:none;opacity:.6}
-.hb{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;opacity:1;animation:fu .8s .8s forwards}
+.hb{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;opacity:1;animation:fu .8s .8s both}
 .btn{background:var(--gold);color:#F8F5F0;padding:16px 40px;border-radius:2px;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;font-weight:500;transition:all .25s;border:none;cursor:pointer;display:inline-block}
 .btn:hover{background:var(--gl);transform:translateY(-2px);box-shadow:0 8px 30px rgba(45,80,22,.25)}
 .bto{background:transparent;color:var(--cr);padding:15px 40px;border-radius:2px;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;font-weight:400;border:1px solid rgba(45,80,22,.35);transition:all .25s;cursor:pointer}
 .bto:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
-.hpb{margin-top:52px;position:relative;z-index:1;text-align:center;padding:32px 60px 40px;border-top:1px solid rgba(45,80,22,.18);width:100%;opacity:1;animation:fu .8s 1.0s forwards}
+.hpb{margin-top:52px;position:relative;z-index:1;text-align:center;padding:32px 60px 40px;border-top:1px solid rgba(45,80,22,.18);width:100%;opacity:1;animation:fu .8s 1.0s both}
 .hpb-label{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mu);margin-bottom:10px}
 .hpb-link{color:var(--gold);text-decoration:none;font-weight:500;transition:color .2s;border-bottom:1px solid rgba(45,80,22,.3)}
 .hpb-link:hover{color:var(--gl);border-bottom-color:var(--gl)}
 .hpb-desc{font-size:.97rem;color:rgba(26,26,26,.6);line-height:1.8;font-style:italic;max-width:700px;margin:0 auto}
-.shi{display:flex;flex-direction:column;align-items:center;gap:8px;position:relative;z-index:1;opacity:1;animation:fu 1s 1.4s forwards;cursor:pointer}
+.shi{display:flex;flex-direction:column;align-items:center;gap:8px;position:relative;z-index:1;opacity:1;animation:fu 1s 1.4s both;cursor:pointer}
 .shi span{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mu)}
 .sl{width:1px;height:40px;background:linear-gradient(to bottom,var(--gold),transparent);animation:sp 2s infinite}
 
 /* === VIDEO SECTION === */
-#vid-mashup{width:100%;padding:0;opacity:1;animation:fu .8s .5s forwards}
+#vid-mashup{width:100%;padding:0;opacity:1;animation:fu .8s .5s both}
 .vm-inner{max-width:900px;margin:0 auto;padding:0 60px}
 .vm-label{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mu);text-align:center;margin-bottom:20px}
 .vm-wrap{position:relative;border-radius:6px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.10),0 32px 80px rgba(45,80,22,.18),0 2px 6px rgba(0,0,0,.08);line-height:0}
@@ -160,7 +160,7 @@ footer{background:#EFEFEB;padding:60px 60px 36px;border-top:1px solid var(--bord
 /* === MODAL === */
 .mod{display:none;position:fixed;inset:0;z-index:999;background:rgba(0,0,0,.55);align-items:center;justify-content:center;padding:20px}
 .mod.on{display:flex}
-.mb{background:#FFFFFF;max-width:580px;width:100%;border:1px solid var(--border);border-radius:4px;padding:52px 48px;position:relative;animation:fu .4s forwards}
+.mb{background:#FFFFFF;max-width:580px;width:100%;border:1px solid var(--border);border-radius:4px;padding:52px 48px;position:relative;animation:fu .4s both}
 .mc{position:absolute;top:20px;right:24px;background:none;border:none;color:var(--mu);font-size:1.4rem;cursor:pointer;transition:color .2s}
 .mc:hover{color:var(--gold)}
 .mn{font-family:'Playfair Display',serif;font-size:2rem;color:var(--gold);margin-bottom:8px}
