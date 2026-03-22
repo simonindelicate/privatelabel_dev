@@ -409,10 +409,13 @@ window.addEventListener('scroll',function(){
   document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>60);
   if(_shi){
     var el=_shi; _shi=null;
+    var cur=parseFloat(window.getComputedStyle(el).opacity);
+    el.style.transition='none';
     el.style.animation='none';
-    requestAnimationFrame(function(){
-      requestAnimationFrame(function(){ el.style.opacity='0'; });
-    });
+    el.style.opacity=cur;
+    el.offsetHeight;
+    el.style.transition='opacity .3s';
+    el.style.opacity='0';
   }
 },{passive:true});
 
