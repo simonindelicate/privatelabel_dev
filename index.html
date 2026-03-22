@@ -407,7 +407,7 @@ document.getElementById('mt').innerHTML=st2.map(function(s){return '<div class="
 var _shi=document.querySelector('.shi');
 window.addEventListener('scroll',function(){
   document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>60);
-  if(_shi)_shi.style.opacity=window.scrollY>0?0:1;
+  if(_shi){_shi.style.animation='none';_shi.style.opacity='0';_shi=null;}
 },{passive:true});
 
 /* ========== FADE-IN ========== */
