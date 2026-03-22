@@ -401,7 +401,7 @@ document.getElementById('pg').innerHTML=GB.map(function(b){return '<div class="p
 
 /* ========== MARKET STRIP ========== */
 var st2=STATS.concat(STATS);
-document.getElementById('mt').innerHTML=st2.map(function(s){return '<div class="mi"><div class="dot"></div><span>'+s.l+':</span><span class="val">'+s.v+'</span></div>';}).join('');
+var _mt=document.getElementById('mt');if(_mt)_mt.innerHTML=st2.map(function(s){return '<div class="mi"><div class="dot"></div><span>'+s.l+':</span><span class="val">'+s.v+'</span></div>';}).join('');
 
 /* ========== NAV ========== */
 var _shi=document.querySelector('.shi');
