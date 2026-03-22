@@ -404,7 +404,11 @@ var st2=STATS.concat(STATS);
 document.getElementById('mt').innerHTML=st2.map(function(s){return '<div class="mi"><div class="dot"></div><span>'+s.l+':</span><span class="val">'+s.v+'</span></div>';}).join('');
 
 /* ========== NAV ========== */
-window.addEventListener('scroll',function(){document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>60);});
+var _shi=document.querySelector('.shi');
+window.addEventListener('scroll',function(){
+  document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>60);
+  if(_shi)_shi.style.opacity=Math.max(0,1-window.scrollY/180);
+},{passive:true});
 
 /* ========== FADE-IN ========== */
 var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target);}});},{threshold:0.12});
