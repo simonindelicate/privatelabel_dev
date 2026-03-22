@@ -405,16 +405,15 @@ document.getElementById('mt').innerHTML=st2.map(function(s){return '<div class="
 
 /* ========== NAV ========== */
 var _shi=document.querySelector('.shi');
-function _hideShi(){
-  if(!_shi)return;
-  _shi.style.animation='none';
-  void _shi.offsetWidth; /* force reflow so transition sees before/after */
-  _shi.style.opacity='0';
-  _shi=null;
-}
 window.addEventListener('scroll',function(){
   document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>60);
-  _hideShi();
+  if(_shi){
+    var el=_shi; _shi=null;
+    el.style.animation='none';
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){ el.style.opacity='0'; });
+    });
+  }
 },{passive:true});
 
 /* ========== FADE-IN ========== */
