@@ -409,14 +409,14 @@ window.addEventListener('scroll',function(){
   document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>60);
   if(_shi){
     var el=_shi; _shi=null;
-    var from=parseFloat(window.getComputedStyle(el).opacity);
-    el.getAnimations().forEach(function(a){a.cancel();});
-    var t0=performance.now();
-    (function fade(now){
-      var p=Math.min((now-t0)/300,1);
-      el.style.setProperty('opacity',String(from*(1-p)),'important');
-      if(p<1)requestAnimationFrame(fade);
-    })(t0);
+    var cs=window.getComputedStyle(el);
+    el.style.transform=cs.transform;
+    el.style.transition='none';
+    el.style.animation='none';
+    el.style.opacity=cs.opacity;
+    el.offsetHeight;
+    el.style.transition='opacity .3s';
+    el.style.opacity='0';
   }
 },{passive:true});
 
