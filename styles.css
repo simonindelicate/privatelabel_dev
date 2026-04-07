@@ -8,8 +8,8 @@ body{background:var(--dk);color:var(--cr);font-family:'DM Sans',sans-serif;font-
 /* === NAVIGATION === */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 60px;display:flex;align-items:center;justify-content:space-between;background:rgba(248,245,240,0.97);transition:background .4s;border-bottom:1px solid var(--border)}
 nav.scrolled{background:rgba(248,245,240,0.97);border-bottom:1px solid var(--border)}
-.logo{font-family:'Playfair Display',serif;font-size:1.85rem;letter-spacing:.06em;color:var(--gold);text-decoration:none;display:flex;flex-direction:column;line-height:1.15}
-.logo span{color:var(--cr)}
+.logo{text-decoration:none;display:flex;align-items:center}
+.logo img{height:52px;width:auto;display:block}
 .logo-sub{font-family:'DM Sans',sans-serif;font-size:.56rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(45,80,22,0.5);font-weight:400;margin-top:4px}
 .nl{display:flex;gap:36px;list-style:none}
 .nl a{color:rgba(26,26,26,.65);text-decoration:none;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
@@ -207,7 +207,7 @@ footer{background:#EFEFEB;padding:60px 60px 36px;border-top:1px solid var(--bord
    ================================================================= */
 @media(max-width:768px){
   nav{padding:14px 20px}
-  .logo{font-size:1.4rem}
+  .logo img{height:38px}
   .nav-toggle{display:flex}
   .nl{
     display:none;position:fixed;top:0;left:0;right:0;bottom:0;
